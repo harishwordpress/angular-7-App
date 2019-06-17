@@ -23,6 +23,9 @@ npm run-script build
 ```bash 
 npm run-script build
 ```
+![alt text](https://github.com/harishwordpress/angular-7-App/blob/master/snaps/list.png)
+
+
 
 
 
