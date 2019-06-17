@@ -1,4 +1,4 @@
-# Angular 7 App without CLI
+# Angular 7 App 
 Login
 ![alt text](https://github.com/harishwordpress/angular-7-App/blob/master/snaps/login.png)
 
