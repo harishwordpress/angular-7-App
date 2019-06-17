@@ -66,7 +66,7 @@ export class HomeDetailComponent implements OnInit {
             .pipe(first())
             .subscribe(
                 data => {
-                    //this.router.navigate(['/login']);
+                    
                     this.loading = false;
                 },
                 error => {
@@ -85,7 +85,7 @@ export class HomeDetailComponent implements OnInit {
     private deleteUser() {
      if(confirm("Are you sure to delete ")) {
         this.userService.delete(this.id).pipe(first()).subscribe(() => {
-           
+        this.router.navigate(['/']);   
         });
       }
     }
