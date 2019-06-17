@@ -1,0 +1,28 @@
+﻿<nav class="navbar navbar-expand-sm bg-dark navbar-dark" *ngIf="currentUser">
+  <!-- Brand/logo -->
+  <img style="-webkit-user-select: none;" src="https://angular.io/assets/images/logos/angular/logo-nav@2x.png">
+  
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-item nav-link" routerLink="/">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" (click)="logout()">Logout</a>
+    </li>
+
+  </ul>
+  
+</nav>
+
+<!-- main app container -->
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <alert></alert>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>

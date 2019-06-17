@@ -1,0 +1,33 @@
+﻿<div class="form-group">
+        <div class="col-md-4" >
+            <input type="text" [(ngModel)]="searchText" 
+                   class="form-control" placeholder="Search by first name, last name or amount" />
+        </div>
+</div>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Profile Pic</th>
+        <th>Fristname</th>
+        <th>Lastname</th>
+        <th>State</th>
+        <th>City</th>
+        <th>Zip</th>
+        <th>Street Address</th>
+        <th>Total Order</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users | filter : searchText" [routerLink]="['/home', user.id]" >
+        <td><img src="{{user.profileimage }}" class="img-responsive" width="20%" alt="{{ user.fristname }}"></td>
+        <td>{{ user.fristname}}</td>
+        <td>{{ user.lastname }}</td>
+        <td>{{ user.address.state}}</td>
+        <td>{{ user.address.city}}</td>
+        <td>{{ user.address.zip}}</td>
+        <td>{{ user.address.streetaddress}}</td>
+        <td>{{ user.ordertotal.amountfield  | currency:user.ordertotal.currency :'symbol-narrow' }}</td>
+      </tr>
+    </tbody>
+
+    
