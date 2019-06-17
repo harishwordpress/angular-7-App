@@ -105,7 +105,7 @@ npm Start
 npm run-script build
 ```
 
-# Buid  
+# Start Build  
 ```bash 
 npm run-script build
 ```
