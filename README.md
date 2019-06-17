@@ -1,4 +1,4 @@
-# Angular 7 App 
+# Angular 7 App without CLI
 Login
 ![alt text](https://github.com/harishwordpress/angular-7-App/blob/master/snaps/login.png)
 
@@ -22,11 +22,17 @@ Clone this repo into new project folder (e.g., `my-proj`).
 $ git clone  https://github.com/harishwordpress/angular-7-App  my-proj
 $ cd my-proj
 ```
-# Install Dependency
+# Versions 
 ```bash
 make sure u have node or npm installed 
 npm -v //5.6.0
 node -v // v8.9.4
+angular version -7
+bootstrap 4.1.3
+```
+
+# Install Dependency
+```bash
 
 npm install
 ```
@@ -37,7 +43,7 @@ npm Start
 npm run-script build
 ```
 
-#buid 
+# Buid  
 ```bash 
 npm run-script build
 ```
