@@ -22,6 +22,68 @@ Clone this repo into new project folder (e.g., `my-proj`).
 $ git clone  https://github.com/harishwordpress/angular-7-App  my-proj
 $ cd my-proj
 ```
+# Structure of App
+```bash
+├── dist
+│   ├── index.html
+│   ├── main.js
+│   ├── runtime~main.js
+│   └── vendors~main.js
+├── package.json
+├── package-lock.json
+├── README.md
+├── snaps
+│   ├── list.png
+│   ├── login.png
+│   ├── registration.png
+│   └── update.png
+├── src
+│   ├── app
+│   │   ├── app.component.html
+│   │   ├── app.component.ts
+│   │   ├── app.module.ts
+│   │   ├── app.routing.ts
+│   │   ├── _components
+│   │   │   ├── alert.component.html
+│   │   │   ├── alert.component.ts
+│   │   │   └── index.ts
+│   │   ├── _guards
+│   │   │   ├── auth.guard.ts
+│   │   │   └── index.ts
+│   │   ├── _helpers
+│   │   │   ├── error.interceptor.ts
+│   │   │   ├── fake-backend.ts
+│   │   │   ├── index.ts
+│   │   │   └── jwt.interceptor.ts
+│   │   ├── home
+│   │   │   ├── filter.pipe.ts
+│   │   │   ├── home.component.html
+│   │   │   └── home.component.ts
+│   │   ├── homeDetail
+│   │   │   ├── homeDetail.component.html
+│   │   │   └── homeDetail.component.ts
+│   │   ├── login
+│   │   │   ├── login.component.html
+│   │   │   └── login.component.ts
+│   │   ├── _models
+│   │   │   ├── index.ts
+│   │   │   └── user.ts
+│   │   ├── register
+│   │   │   ├── register.component.html
+│   │   │   └── register.component.ts
+│   │   └── _services
+│   │       ├── alert.service.ts
+│   │       ├── authentication.service.ts
+│   │       ├── index.ts
+│   │       └── user.service.ts
+│   ├── index.html
+│   ├── main.ts
+│   ├── polyfills.ts
+│   └── typings.d.ts
+├── tsconfig.json
+└── webpack.config.js
+```
+
 # Versions 
 ```bash
 make sure u have node or npm installed 
